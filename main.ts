@@ -3,6 +3,7 @@ import { BPS, runBars, type Bar, type BarsState, type BuyInput, type SellInput }
 // Autonomous Mean-Reversion Dynamic Dip Rebound Bot for CBBTC/USDC
 // Protocol: agent-fun/bars-replay/v1
 // Captures high-conviction capitulation dips with tight trailing execution
+// Revision 2: Calibrated trailing stop threshold for optimal fill efficiency
 
 const SMA_PERIOD = 120; // 120-minute baseline rolling mean
 const DIP_BPS = 210; // Entry trigger: -2.10% dip relative to 120-bar SMA
